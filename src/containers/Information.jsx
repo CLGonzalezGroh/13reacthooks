@@ -27,7 +27,7 @@ const Information = () => {
       phone: formData.get("phone"),
     };
     addToBuyer(buyer);
-    history.push("/checkout/payment");
+    setTimeout(() => history.push("/checkout/payment"), 1000);
   };
 
   return (
